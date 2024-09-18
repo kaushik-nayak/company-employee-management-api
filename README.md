@@ -7,8 +7,8 @@
     Example body,
 ```
     { 
-        username: "adminuser", 
-        password: "password",
+        "username": "adminuser", 
+        "password": "password",
         "role": "admin"
     }
 ```
@@ -18,8 +18,8 @@
     Example body,
 ```
     { 
-        username: "adminuser", 
-        password: "password"
+        "username": "adminuser", 
+        "password": "password"
     }
 ```
 - POST `/api/companies`.
@@ -76,4 +76,3 @@
 
 - GET `/api/employees/{id}/manager`.
     It is to get Manager details based on employee ID provided.
-
