@@ -3,7 +3,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import User from '../../src/models/user';
 import { signup, login } from '../../src/controllers/authController';
-import { mockRequest, mockResponse } from './mocks/express';
+import { mockRequest, mockResponse } from './mocks/mock';
 
 jest.mock('bcrypt');
 jest.mock('jsonwebtoken');

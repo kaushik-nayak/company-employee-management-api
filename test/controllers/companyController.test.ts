@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { createCompany, updateCompany, getCompany } from '../../src/controllers/companyController';
 import companyService from '../../src/services/companyService';
-import { mockRequest, mockResponse } from './mocks/express';
+import { mockRequest, mockResponse } from './mocks/mock';
 
 jest.mock('../../src/services/companyService');
 

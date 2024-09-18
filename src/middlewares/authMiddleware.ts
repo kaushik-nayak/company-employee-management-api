@@ -15,7 +15,7 @@ const authMiddleware = async (req: AuthenticatedRequest, res: Response, next: Ne
     const user = await User.findById(decoded.userId);
     if (!user || user.role !== 'admin') return res.status(403).json({ error: 'Access denied' });
 
-    req.user = user; // Set user on req
+    req.user = user;
     next();
   } catch (error) {
     res.status(401).json({ error: 'Invalid token' });

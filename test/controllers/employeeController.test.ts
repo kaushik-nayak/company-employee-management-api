@@ -1,6 +1,6 @@
 import { createEmployee, updateEmployee, deleteEmployee, searchEmployee, listSubordinates, getReportingManager } from '../../src/controllers/employeeController';
 import employeeService from '../../src/services/employeeService';
-import { mockRequest, mockResponse } from './mocks/express';
+import { mockRequest, mockResponse } from './mocks/mock';
 import Employee from '../../src/models/employee';
 
 jest.mock('../../src/services/employeeService');
