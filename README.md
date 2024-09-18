@@ -2,12 +2,23 @@
 
 ### Current APIs
 
+- POST `/api/signup`.
+    It is to signup as an Admin or a User. 
+    Example body,
+```
+    { 
+        username: "adminuser", 
+        password: "password",
+        "role": "admin"
+    }
+```
+
 - POST `/api/login`.
     It is to login as an Admin or a User. 
     Example body,
 ```
     { 
-        username: "adminuser, 
+        username: "adminuser", 
         password: "password"
     }
 ```
@@ -66,6 +77,3 @@
 - GET `/api/employees/{id}/manager`.
     It is to get Manager details based on employee ID provided.
 
-### Limitations
-
--Signed Up the Admin Manually.
